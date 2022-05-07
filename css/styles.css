@@ -1,0 +1,409 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(146, 141, 141);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+#cont{
+    margin: 0;
+    padding: 0;
+    width: 70em;
+    height: 70em;
+    background: radial-gradient(white, rgb(146, 141, 141));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#cable{
+    position: absolute;
+    width: 0.07em;
+    height: 15em;
+    border: solid rgb(78, 72, 72) 0.4em;
+    margin-top: -9em;
+    background-color: rgb(78, 72, 72);
+}
+#cable2 {
+    position: absolute;
+    margin-top: -28em;
+    margin-left: 4.9em;
+    width: 4em; 
+    height: 5em; 
+    border-top-left-radius: 60em;  /* 100px of height + 10px of border */
+    border-top-right-radius: 60em; /* 100px of height + 10px of border */
+    border: 0.9em solid rgb(78, 72, 72);
+    border-bottom: 0;
+}
+#cable3 {
+    position: absolute;
+    margin-top: -22em;
+    margin-left: 14.85em;
+    width: 4em; 
+    height: 5em; 
+    border-top-left-radius: 60em;  /* 100px of height + 10px of border */
+    border-top-right-radius: 60em; /* 100px of height + 10px of border */
+    border: 0.9em solid rgb(78, 72, 72);
+    border-bottom: 0;
+    transform: rotate(180deg);
+}
+#cable4 {
+    position: absolute;
+    width: 0.07em;
+    height: 22em;
+    border: solid rgb(78, 72, 72) 0.4em;
+    margin-top: -49em;
+    margin-left: 19.8em;
+    background-color: rgb(78, 72, 72);
+}
+#lleft{
+    position: absolute;
+    margin-top: 6em;
+    margin-left: -21em;
+    border: solid rgb(189, 184, 184) 1em;
+    width: 14em;
+    height: 14em;
+    border-radius: 14em;
+    background-color: rgb(189, 184, 184);
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0.1em 0.5em rgba(58, 55, 55, 0.400);
+}
+#centro{
+    position: absolute;
+    width: 20em;
+    height: 12em;
+    border: solid rgb(189, 184, 184) 1em;
+    margin-top: 4em;
+    background-color: rgb(189, 184, 184);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    box-shadow: 0.3em 0.5em rgba(58, 55, 55, 0.400);
+    
+}
+#lright{
+    position: absolute;
+    margin-top: 6em;
+    margin-left: 21em;
+    border: solid rgb(189, 184, 184) 1em;
+    width: 14em;
+    height: 14em;
+    border-radius: 14em;
+    background-color: rgb(189, 184, 184);
+    z-index: 3; /*Superpone el elemento sobre otro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0.4em 0.3em rgba(58, 55, 55, 0.400);
+}
+.lleft2{
+    position: absolute;
+    width: 11em;
+    height: 11em;
+    border-radius: 11em;
+    background-color: rgb(189, 184, 184);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.2em solid rgb(177, 171, 171);
+    box-shadow: 0.2em 0.2em inset rgba(92, 88, 88, 0.070);
+}
+.vert{
+    position: absolute;
+    border: solid rgb(66, 63, 63) 0.2em;
+    width: 3em;
+    height: 9em;
+    border-radius: 0.5em;
+    background-color: rgb(66, 63, 63);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0.2em 0.3em rgba(58, 55, 55, 0.226);
+    border: solid rgb(41, 39, 39) 0.06em;
+    
+}
+.hori{
+    position: absolute;
+    border: solid rgb(66, 63, 63) 0.2em;
+    width: 9em;
+    height: 3em;
+    border-radius: 0.5em;
+    background-color: rgb(66, 63, 63);
+    box-shadow: 0.2em 0.3em rgba(58, 55, 55, 0.226);
+    border: solid rgb(41, 39, 39) 0.06em;
+}
+.triangulo {
+    position: absolute;
+    margin-top: -7em;
+    width: 0; 
+    height: 0; 
+    border-left: 1.3em solid rgb(85, 81, 81);
+    border-top: 0.8em solid transparent;
+    border-bottom: 0.8em solid transparent; 
+    transform: rotate(270deg);
+}
+.triangulo2 {
+    margin-top: 7em;
+    width: 0; 
+    height: 0; 
+    border-left: 1.3em solid rgb(85, 81, 81);
+    border-top: 0.8em solid transparent;
+    border-bottom: 0.8em solid transparent; 
+    transform: rotate(90deg);
+}
+.triangulo3 {
+    position: absolute;
+    margin-left: 0.2em;
+    margin-top: 0.7em;
+    width: 0; 
+    height: 0; 
+    border-left: 1.3em solid rgb(85, 81, 81);
+    border-top: 0.8em solid transparent;
+    border-bottom: 0.8em solid transparent; 
+    transform: rotate(180deg);
+}
+.triangulo4 {
+    margin-top: 0.7em;
+    margin-left: 7.5em;
+    width: 0; 
+    height: 0; 
+    border-left: 1.3em solid rgb(85, 81, 81);
+    border-top: 0.8em solid transparent;
+    border-bottom: 0.8em solid transparent; 
+}
+.lRight2 {
+    position: absolute;
+    width: 13em;
+    height: 13em;
+    border-radius: 13em;
+    background-color: rgb(141, 130, 130);
+    border: 0.07em solid rgb(68, 65, 65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rectangulos {
+    position: absolute;
+    height: 3em;
+    width: 8em;
+    background-color: rgb(189, 184, 184);
+    transform: rotate(145deg);
+    margin-top: -3em;
+    margin-left: -3em;
+    border-radius: 2em;
+    border: solid rgb(41, 39, 39) 0.01em;
+}
+.rectangulos2{
+    height: 3em;
+    width: 8em;
+    background-color: rgb(189, 184, 184);
+    transform: rotate(145deg);
+    margin-top: 3em;
+    border-radius: 2em;
+    margin-left: 3em;
+    border: solid rgb(41, 39, 39) 0.01em;
+}
+.boton {
+    position: absolute;
+    width: 2.6em;
+    height: 2.6em;
+    border-radius: 2.6em;
+    background: linear-gradient(rgb(3, 1, 119), rgb(36, 27, 165), rgb(73, 63, 214));
+    margin-top: 0.2em;
+    margin-left: 0.3em;
+    box-shadow: -0.1em -0.3em rgba(58, 55, 55, 0.400);
+    border: solid rgb(41, 39, 39) 0.01em;
+}
+.boton2{
+    position: absolute;
+    width: 2.6em;
+    height: 2.6em;
+    border-radius: 2.6em;
+    background: linear-gradient(rgb(1, 90, 1), rgb(31, 133, 31), rgb(86, 206, 86));
+    margin-top: 0.2em;
+    margin-left: 5.1em;
+    box-shadow: -0.1em -0.3em rgba(58, 55, 55, 0.400);
+    border: solid rgb(41, 39, 39) 0.01em;
+}
+.boton3 {
+    position: absolute;
+    width: 2.6em;
+    height: 2.6em;
+    border-radius: 2.6em;
+    background: linear-gradient(rgb(153, 1, 1), rgb(184, 29, 29), rgb(240, 88, 88));
+    margin-top: 0.2em;
+    margin-left: 0.3em;
+    box-shadow: -0.1em -0.3em rgba(58, 55, 55, 0.400);
+    border: solid rgb(41, 39, 39) 0.01em;
+}
+.boton4 {
+    position: absolute;
+    width: 2.6em;
+    height: 2.6em;
+    border-radius: 2.6em;
+    background: linear-gradient(yellow, rgba(212, 214, 59, 0.863), rgb(234, 236, 120));
+    margin-top: 0.2em;
+    margin-left: 5.1em;
+    box-shadow: -0.1em -0.3em rgba(58, 55, 55, 0.400);
+    border: solid rgb(41, 39, 39) 0.01em;
+}
+.centrados {
+    position: absolute;
+    width: 9.8em;
+    height: 2.4em;
+    background-color: rgb(175, 170, 170);
+    border: solid 0.02em rgb(182, 178, 178);
+    margin-top: -5em;
+    z-index: 7;
+    border-radius: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.centrados2 {
+    position: absolute;
+    width: 2em;
+    height: 3em;
+    margin-top: 7em;
+    margin-left: -2.6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.centrados3 {
+    position: absolute;
+    width: 2em;
+    height: 3em;
+    margin-top: 7em;
+    margin-left: 2.6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.options{
+    font-size: 0.5em;
+    text-align: center;
+    margin-top: 7em;
+    font-weight: bold;
+}
+#start {
+    position: absolute;
+    width: 0.8em;
+    height: 2.3em;
+    background: linear-gradient(to right, rgb(119, 111, 111),rgb(165, 158, 158),rgb(131, 121, 121));
+    border-radius: 0.5em;
+    transform: rotate(45deg);
+     box-shadow: 0.3em 0.1em rgba(58, 55, 55, 0.226); 
+    border: solid rgb(41, 39, 39) 0.01em;
+}
+.select {
+    position: absolute;
+    width: 0.8em;
+    height: 2.3em;
+    background: linear-gradient(to right, rgb(119, 111, 111),rgb(165, 158, 158),rgb(131, 121, 121));
+    border-radius: 0.5em;
+    transform: rotate(45deg);
+    box-shadow: 0.3em 0.1em rgba(58, 55, 55, 0.226);
+    border: solid rgb(41, 39, 39) 0.01em;
+}
+.traseros {
+    position: absolute;
+    width: 9em;
+    height: 3em;
+    background-color: rgb(143, 137, 137);
+    margin-top: -8em;
+    margin-left: -16em;
+    border-radius: 14em;
+}
+.traseros2 {
+    position: absolute;
+    width: 9em;
+    height: 3em;
+    background-color: rgb(143, 137, 137);
+    margin-top: -8em;
+    margin-left: 16em;
+    border-radius: 14em;
+}
+#geeks {
+    font-size: 1.5em;
+    color: rgb(196, 96, 96);
+}
+.cover {
+    width: 2.8em;
+    height: 3.5em;
+    position: absolute;
+    background-color: rgb(189, 184, 184);
+    z-index: 4;
+    margin-left: -7.7em;
+    margin-top: 14.5em;
+}
+.letra {
+    position: absolute;
+    font-size: 1em;
+    color: rgb(189, 184, 184);
+}
+#letraA {
+    margin-top: -2.5em;
+    margin-left: 11em;
+}
+#letraB {
+    margin-top: 9em;
+    margin-left: -4.8em;
+}
+#letraY {
+    margin-top: 2.8em;
+    margin-left: -10.9em;
+}
+#letraX {
+    margin-top: -8.5em;
+    margin-left: 5.3em;
+}
+.cover2 {
+    position: absolute;
+    width: 2.99em;
+    height: 5em;
+    background-color: red;
+    z-index: 5;
+    margin-top: 6em;
+    margin-left: -21em;
+    background-color: rgb(66, 63, 63);
+}
+.agujero {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    border-radius: 2em;
+    z-index: 6;
+    margin-top: 6em;
+    margin-left: -21em;
+    border: 0.01em solid rgb(66, 63, 63);
+    background: radial-gradient(rgb(66, 63, 63), rgb(126, 121, 121), rgb(66, 63, 63),rgb(66, 63, 63));
+    box-shadow: inset 0.6em 0.6em rgb(66, 63, 63, 0.750);
+}
+.cover3 {
+        width: 2em;
+        height: 5em;
+        position: absolute;
+        background-color: rgb(189, 184, 184);
+        z-index: 4;
+        margin-left: -5.5em;
+        margin-top: 8em;
+        transform: rotate(30deg);
+}
+.cover4 {
+        width: 2em;
+        height: 2.1em;
+        position: absolute;
+        background-color: rgb(189, 184, 184);
+        z-index: 4;
+        margin-left: 8.4em;
+        margin-top: 15.9em;
+}
